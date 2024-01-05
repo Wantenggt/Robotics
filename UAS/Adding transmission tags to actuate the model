@@ -1,0 +1,12 @@
+<xacro:macro name="transmission_block" params="joint_name"> 
+ <transmission name="tran1"> 
+ <type>transmission_interface/SimpleTransmission</type> 
+ <joint name="${joint_name}"> 
+ <hardwareInterface>hardware_interface/
+PositionJointInterface</hardwareInterface> 
+ </joint> 
+ <actuator name="motor1"> 
+ <mechanicalReduction>1</mechanicalReduction> 
+ </actuator> 
+ </transmission> 
+ </xacro:macro> 
