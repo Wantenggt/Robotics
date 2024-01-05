@@ -1,0 +1,9 @@
+<gazebo reference="bottom_link"> 
+ <material>Gazebo/White</material> 
+ </gazebo> 
+ <gazebo reference="base_link"> 
+ <material>Gazebo/White</material> 
+ </gazebo> 
+ <gazebo reference="shoulder_pan_link"> 
+ <material>Gazebo/Red</material> 
+ </gazebo> 
