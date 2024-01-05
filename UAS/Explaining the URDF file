@@ -1,0 +1,19 @@
+<?xml version="1.0"?> 
+<robot name="pan_tilt"> 
+<link name="base_link"> 
+ <visual> 
+ <geometry> 
+ <cylinder length="0.01" radius="0.2"/> 
+ </geometry> 
+ <origin rpy="0 0 0" xyz="0 0 0"/> 
+ <material name="yellow"> 
+ <color rgba="1 1 0 1"/> 
+ </material> 
+ </visual> 
+ </link> 
+<joint name="pan_joint" type="revolute"> 
+ <parent link="base_link"/> 
+ <child link="pan_link"/> 
+ <origin xyz="0 0 0.1"/> 
+ <axis xyz="0 0 1" /> 
+ </joint> 
